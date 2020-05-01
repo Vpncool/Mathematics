@@ -22,6 +22,7 @@ public class FindRoot {
 		double end = number / 2;
 		double mid = end;
 		while (true) {
+			System.out.println("Diff :: "+diff(number, mid, root));
 			if (precision >= diff(number, mid, root)) {
 				return mid;
 			}
